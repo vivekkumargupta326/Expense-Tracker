@@ -5,22 +5,26 @@ import com.project.expense.service.ExpenseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
-@RestController
+@Controller
 public class ExpenseController {
 
     @Autowired
     ExpenseService expenseService;
     @PostMapping("/add")
-    public Expense add(@RequestBody Expense expense)
+    public ModelAndView add(Expense expense)
     {
-        return expenseService.addToDb(expense);
+        ModelAndView mv = new ModelAndView("AddExpense.jsp");
+        expenseService.addToDb(expense);
+        mv.addObject("message","Added successfully");
+        return mv;
     }
 
     @GetMapping("/home")
     public String home()
     {
-        return "WELCOME TO EXPENSE TRACKER";
+        return "Home.jsp";
     }
 
 }

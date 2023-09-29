@@ -10,7 +10,8 @@ public class ExpenseService {
 
     @Autowired
     ExpenseDao expenseDao;
-    public Expense addToDb(Expense expense) {
-        return expenseDao.save(expense);
+    public void addToDb(Expense expense) {
+        expenseDao.save(expense);
     }
+
 }
