@@ -20,6 +20,7 @@
 							              <option value="kitchen apppliance">kitchen appliance</option>
 							              <option value="fare">fare</option>
 							              <option value="entertainment">entertainment</option>
+							              <option value="maid & cook">maid and cook</option>
 							              <option value="miscellaneous">miscellaneous</option>
 							              <!-- Add more options as needed -->
 							          </select>
