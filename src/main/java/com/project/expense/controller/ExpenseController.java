@@ -15,9 +15,14 @@ public class ExpenseController {
     @PostMapping("/add")
     public ModelAndView add(Expense expense)
     {
-        ModelAndView mv = new ModelAndView("AddExpense.jsp");
-        expenseService.addToDb(expense);
-        mv.addObject("message","Added successfully");
+    	ModelAndView mv = new ModelAndView("AddExpense.jsp");
+        if(expenseService.addToDb(expense)) {
+        	mv.addObject("message","Added successfully");
+        }
+        else
+        {
+        	mv.addObject("message","Invalid data, please enter correctly");
+        }
         return mv;
     }
 
