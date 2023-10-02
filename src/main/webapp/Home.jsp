@@ -1,8 +1,12 @@
 <html>
+	<head>
+		<link rel = 'stylesheet' href = './home_page_style.css'>
+	</head>
     <body>
-        <h2>Welcome toExpense-Tracker</h2>
-        Click <a href = "./AddExpense.jsp">here</a> to add a new expense
+        <h2>Welcome to Expense-Tracker</h2>
         <br>
-        Click <a href = "./GetInsights.jsp">here</a> to get insights on your spends
+        <button id="redirectToAddExpense">Add expense</button>
+   
+        <script src = "./home_page_script.js"></script>
     </body>
 </html>

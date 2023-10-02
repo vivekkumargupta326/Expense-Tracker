@@ -1,4 +1,7 @@
 <html>
+	<head>
+		<link rel = 'stylesheet' href = "./AddExpense_page_style.css">
+	</head>
     <body>
         <h2>Add your expense here</h2>
         <div>
@@ -34,6 +37,6 @@
         </div>
         <br><br>
         ${message}
-        <script src = "./validate.js">	</script>
+        <script src = "./AddExpense_page_script.js">	</script>
     </body>
 </html>

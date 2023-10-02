@@ -1,7 +1,5 @@
-/**
- * 
- */
 
+ /*
  document.querySelector("#submit").onclick = function validate()
  {
 	 let day = document.querySelector("#day").value;
@@ -10,3 +8,4 @@
 		 window.alert("Day is out of range");
 	 }
  }
+ */
